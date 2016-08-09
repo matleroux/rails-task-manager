@@ -1,2 +1,6 @@
-<h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h1>Task n°<%=@task.id%></h1>
+<p><%= @task.description%></p>
+<p>Status <%= "done" if @task.done%></p>
+<p><%= @task.created_at%></p>
+<p><%= @task.updated_at%></p>
+<%= link_to "Back to the 'to do List'", :back %>
